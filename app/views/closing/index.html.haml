@@ -38,7 +38,9 @@
         %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
         %td{:colspan=>"2"} 479 W Estudillo Ave, San Leandro, CA
         %td 
-          = select_tag({ "Subject" => "Subject", "Mailing" => "Mailing"})
+          %select
+            %option= "Subject"
+            %option= "Mailing"
         %td 
           %input{:type => "checkbox"}
       %tr
@@ -49,7 +51,9 @@
         %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
         %td{:colspan=>"2"} 559 Fun House Pl, Santa Monica, CA 96543
         %td 
-          = select_tag({ "Subject" => "Subject", "Mailing" => "Mailing"})
+          %select
+            %option= "Subject"
+            %option= "Mailing"
         %td
           %input{:type => "checkbox"}
       %tr
@@ -60,7 +64,9 @@
         %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
         %td{:colspan=>"2"} 479 W Estudillo Ave, San Leandro, CA
         %td 
-          = select_tag({ "Subject" => "Subject", "Mailing" => "Mailing"})
+          %select
+            %option= "Subject"
+            %option= "Mailing"
         %td 
           %input{:type => "checkbox"}
       %tr
@@ -71,7 +77,9 @@
         %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
         %td{:colspan=>"2"} 559 Fun House Pl, Santa Monica, CA 96543
         %td 
-          = select_tag({ "Subject" => "Subject", "Mailing" => "Mailing"})
+          %select
+            %option= "Subject"
+            %option= "Mailing"
         %td
           %input{:type => "checkbox"}
       %tr
@@ -82,7 +90,9 @@
         %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
         %td{:colspan=>"2"} 479 W Estudillo Ave, San Leandro, CA
         %td 
-          = select_tag({ "Subject" => "Subject", "Mailing" => "Mailing"})
+          %select
+            %option= "Subject"
+            %option= "Mailing"
         %td 
           %input{:type => "checkbox"}
       %tr
@@ -93,8 +103,10 @@
         %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
         %td{:colspan=>"2"} 559 Fun House Pl, Santa Monica, CA 96543
         %td 
-          = select_tag({ "Subject" => "Subject", "Mailing" => "Mailing"})
+          %select
+            %option= "Subject"
+            %option= "Mailing"
         %td
           %input{:type => "checkbox"}
-  %button
+  %button.submit_btn
     Submit
