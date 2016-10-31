@@ -32,6 +32,7 @@
             %h3.navigation-header
               Browse
           %li{:class => "#{'active' if current_page?(flyers_path) || current_page?(recent_flyers_path)}"}= link_to "Flyers", recent_flyers_path
+          %li{:class => "#{'active' if current_page?(closing_index_path)}"}= link_to "Closing Gifts", closing_index_path
           %li  
             - if current_page?(flyers_path) || current_page?(logos_path) || current_page?(recent_flyers_path) 
               = render 'page_categories'
