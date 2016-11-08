@@ -1,4 +1,18 @@
 $(function(){
+	$('.modal').change(function() {
+	    if($(this).val() == "3") {
+			$("body").addClass("modal-open");
+	    }
+	});
+
+	$(".modal-fade-screen, .modal-close").on("click", function() {
+		$("body").removeClass("modal-open");
+	});
+
+	$(".modal-inner").on("click", function(e) {
+		e.stopPropagation();
+	});
+
 	$(window).scroll(function() {
 	  if ($(this).scrollTop() > 200){ 
 	    $('.hero-wrap-js').addClass("smaller");

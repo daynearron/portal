@@ -23,96 +23,146 @@
       %tr
         %th Loan Officer
         %th Borrower/s
-        %th{:width=>"50"}  Closing Date
+        %th{:width=>"90"}  Closing Date
         %th{:width=>"50"} Type
         %th{:colspan=>"2"} Subject
         %th{:colspan=>"2"} Mailing
-        %th Ship gift to:
-        %th{:width=>"50"}  Approved?
+        %th{:width=>"100"} Ship gift to:
+        %th{:width=>"80"}  Approved?
     %tbody
       %tr
-        %td Rick Olson
+        %td R Olson
         %td Stafford, Torin
         %td 10/28
         %td Sale
-        %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
-        %td{:colspan=>"2"} 479 W Estudillo Ave, San Leandro, CA
+        %td{:colspan=>"2"} 
+          3130 Crow Canyon Pl,
+          %br
+          San Ramon, CA 94583 
+        %td{:colspan=>"2"} 
+          479 W Estudillo Ave, 
+          %br
+          San Leandro, CA
         %td 
-          %select
-            %option= "Subject"
-            %option= "Mailing"
-            %option= "Create"
+          %select.modal
+            %option{:value=>"1"}= "Subject"
+            %option{:value=>"2"}= "Mailing"
+            %option{:value=>"3"}= "Create"
         %td 
           %input{:type => "checkbox"}
       %tr
-        %td Lennys Bermudez Molina
+        %td R Olson
         %td Berg, Kristie
         %td 10/30
         %td Sale
-        %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
-        %td{:colspan=>"2"} 559 Fun House Pl, Santa Monica, CA 96543
+        %td{:colspan=>"2"} 
+          3130 Crow Canyon Pl,
+          %br
+          San Ramon, CA 94583 
+        %td{:colspan=>"2"} 
+          559 Fun House Pl, 
+          %br
+          Santa Monica, CA 96543
         %td 
-          %select
-            %option= "Subject"
-            %option= "Mailing"
-            %option= "Create"
+          %select.modal
+            %option{:value=>"1"}= "Subject"
+            %option{:value=>"2"}= "Mailing"
+            %option{:value=>"3"}= "Create"
         %td
           %input{:type => "checkbox"}
       %tr
-        %td Rick Olson
+        %td R Olson
         %td Stafford, Torin
         %td 10/28
         %td Sale
-        %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
-        %td{:colspan=>"2"} 479 W Estudillo Ave, San Leandro, CA
+        %td{:colspan=>"2"} 
+          3130 Crow Canyon Pl,
+          %br
+          San Ramon, CA 94583 
+        %td{:colspan=>"2"} 
+          479 W Estudillo Ave, 
+          %br
+          San Leandro, CA
         %td 
-          %select
-            %option= "Subject"
-            %option= "Mailing"
-            %option= "Create"
+          %select.modal
+            %option{:value=>"1"}= "Subject"
+            %option{:value=>"2"}= "Mailing"
+            %option{:value=>"3"}= "Create"
         %td 
           %input{:type => "checkbox"}
       %tr
-        %td Lennys Bermudez Molina
+        %td T Galade
         %td Berg, Kristie
         %td 10/30
         %td Sale
-        %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
-        %td{:colspan=>"2"} 559 Fun House Pl, Santa Monica, CA 96543
+        %td{:colspan=>"2"} 
+          3130 Crow Canyon Pl,
+          %br
+          San Ramon, CA 94583 
+        %td{:colspan=>"2"} 
+          559 Fun House Pl, 
+          %br
+          Santa Monica, CA 96543
         %td 
-          %select
-            %option= "Subject"
-            %option= "Mailing"
-            %option= "Create"
+          %select.modal
+            %option{:value=>"1"}= "Subject"
+            %option{:value=>"2"}= "Mailing"
+            %option{:value=>"3"}= "Create"
         %td
           %input{:type => "checkbox"}
       %tr
-        %td Rick Olson
+        %td T Galade
         %td Stafford, Torin
         %td 10/28
         %td Sale
-        %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
-        %td{:colspan=>"2"} 479 W Estudillo Ave, San Leandro, CA
+        %td{:colspan=>"2"} 
+          3130 Crow Canyon Pl,
+          %br
+          San Ramon, CA 94583 
+        %td{:colspan=>"2"} 
+          479 W Estudillo Ave, 
+          %br
+          San Leandro, CA
         %td 
-          %select
-            %option= "Subject"
-            %option= "Mailing"
-            %option= "Create"
+          %select.modal
+            %option{:value=>"1"}= "Subject"
+            %option{:value=>"2"}= "Mailing"
+            %option{:value=>"3"}= "Create"
         %td 
           %input{:type => "checkbox"}
       %tr
-        %td Lennys Bermudez Molina
+        %td T Galade
         %td Berg, Kristie
         %td 10/30
         %td Sale
-        %td{:colspan=>"2"} 3130 Crow Canyon Pl, San Ramon, CA 94583 
-        %td{:colspan=>"2"} 559 Fun House Pl, Santa Monica, CA 96543
+        %td{:colspan=>"2"} 
+          3130 Crow Canyon Pl,
+          %br
+          San Ramon, CA 94583 
+        %td{:colspan=>"2"} 
+          559 Fun House Pl, 
+          %br
+          Santa Monica, CA 96543
         %td 
-          %select
-            %option= "Subject"
-            %option= "Mailing"
-            %option= "Create"
+          %select.modal
+            %option{:value=>"1"}= "Subject"
+            %option{:value=>"2"}= "Mailing"
+            %option{:value=>"3"}= "Create"
         %td
           %input{:type => "checkbox"}
   %button.submit_btn
     Submit
+.modal.mailing-address
+  .modal-fade-screen
+    .modal-inner
+      .modal-close
+      %h1 Shipping Address
+      .form-inputs
+        %input{:type=>"text", :required => true, :placeholder => "Name"}
+        %input{:type=>"text", :required => true, :placeholder => "Address"}
+        %input{:type=>"text", :required => true, :placeholder => "City"}
+        %input{:type=>"text", :required => true, :placeholder => "State"}
+        %input{:type=>"text", :required => true, :placeholder => "Zip"}
+      .form-actions
+        %button.submit_btn
+          Submit

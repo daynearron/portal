@@ -85,7 +85,34 @@
     }
   }
 
-  .modal-inner {
+  &.mailing-address{ 
+    .modal-fade-screen{ 
+      padding-top: 10em;
+    }
+    .modal-inner {
+      background: $modal-background;
+      border-radius: $base-border-radius;
+      margin: auto;
+      margin-top: 0;
+      max-height: 95%;
+      overflow: auto;
+      padding: $modal-padding / 2;
+      position: relative;
+      transition: opacity 0.25s ease;
+      width: 95%;
+
+      @include media($medium-screen) {
+        max-height: 70%;
+        padding: $modal-padding;
+        width: 60%;
+      }
+
+      @include media($large-screen) {
+        width: 50%;
+      }
+    } 
+  }
+  &:not(.mailing-address) .modal-inner {
     background: $modal-background;
     border-radius: $base-border-radius;
     margin: auto;
@@ -154,13 +181,14 @@
       }
     }
   }
-
-  .modal-state:checked + .modal-fade-screen {
+}
+body.modal-open{
+  .modal-fade-screen {
     opacity: 1;
     visibility: visible;
   }
 
-  .modal-state:checked + .modal-fade-screen .modal-inner {
+  .modal-fade-screen .modal-inner {
     top: 0.5em;
   }
 }
